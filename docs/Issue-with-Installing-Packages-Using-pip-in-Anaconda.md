@@ -73,7 +73,7 @@ Successfully installed numpy-1.22.2
 
 # Use pip list to view the currently installed packages, no problem
 (test) PS C:\Users\Administrator> pip list
-Package      Version
+Package      Versionw
 ------------ ---------
 certifi      2021.10.8
 numpy        1.22.2

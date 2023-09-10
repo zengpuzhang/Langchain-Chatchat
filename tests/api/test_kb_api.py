@@ -125,7 +125,7 @@ def test_list_files(api="/knowledge_base/list_files"):
 
 def test_search_docs(api="/knowledge_base/search_docs"):
     url = api_base_url + api
-    query = "介绍一下langchain-chatchat项目"
+    query = "介绍一下VisionSquareChat项目"
     print("\n检索知识库：")
     print(query)
     r = requests.post(url, json={"knowledge_base_name": kb, "query": query})
@@ -156,7 +156,7 @@ def test_delete_doc(api="/knowledge_base/delete_doc"):
         assert data["msg"] == f"{name} 文件删除成功"
 
     url = api_base_url + "/knowledge_base/search_docs"
-    query = "介绍一下langchain-chatchat项目"
+    query = "介绍一下VisionSquareChat项目"
     print("\n尝试检索删除后的检索知识库：")
     print(query)
     r = requests.post(url, json={"knowledge_base_name": kb, "query": query})

@@ -31,7 +31,7 @@ async def document():
 
 def create_app():
     app = FastAPI(
-        title="Langchain-Chatchat API Server",
+        title="VisionSquareChat API Server",
         version=VERSION
     )
     MakeFastAPIOffline(app)
